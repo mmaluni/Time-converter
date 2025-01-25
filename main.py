@@ -175,4 +175,5 @@ def display_times():
                                   converted_pst_time_str=converted_pst_time_str)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
+  #app.run(host='0.0.0.0', port=8080)
